@@ -85,6 +85,12 @@ module Cash
             end
           end
 
+          describe 'when given conditions with keys we do not understand' do
+            it 'considers the query uncacheable' do
+              Story.find(:all, :conditions => '0 = 1').should == []
+            end
+          end
+
           describe 'when given limits and offsets' do
             describe '#find([1, 2, ...], :limit => ..., :offset => ...)' do
               it "returns the correct slice of objects" do
