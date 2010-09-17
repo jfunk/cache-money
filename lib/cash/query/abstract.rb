@@ -126,7 +126,7 @@ module Cash
             else
               column = columns_hash[column_name]
               if column.nil?
-                logger.debug("  \e[1;4;31mUNCACHEABLE\e[0m #{table_name} - #{find_options.inspect} - #{get_options.inspect} - #{@options1.inspect} - #{@options2.inspect}") if logger
+                logger.debug("  \e[1;4;31mUNCACHEABLE\e[0m could not find column #{column_name} in columns #{columns_hash.keys.join(',')}") if logger
                 return nil
               end
               if sql_value[0..0] == ':' && values && values.count > 0 && values[0].is_a?(Hash)
