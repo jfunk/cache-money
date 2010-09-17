@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/cash/util/marshal.rb",
     "lib/cash/write_through.rb",
     "lib/cache_money.rb",
+    "rails/init.rb",
     "lib/mem_cached_session_store.rb",
     "lib/mem_cached_support_store.rb",
     "lib/memcached_wrapper.rb"
