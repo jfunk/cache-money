@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "lib/cash/accessor.rb",
     "lib/cash/buffered.rb",
     "lib/cash/config.rb",
-    "lib/cash/faks.rb",
+    "lib/cash/fake.rb",
     "lib/cash/finders.rb",
     "lib/cash/index.rb",
     "lib/cash/local.rb",
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
   ]
   s.test_files = [
     "config/environment.rb",
-    "config/memcache.yml",
+    "config/memcached.yml",
     "db/schema.rb",
     "spec/cash/accessor_spec.rb",
     "spec/cash/active_record_spec.rb",
